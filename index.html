@@ -4,33 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPS</title>
+    <title>Play Rock Paper Scissors</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
 </head>
-<body>
-    <header>
-        <inner-column>
-            <hero>
-                <h1>Rock Paper Scissors</h1>
-            </hero>
-        </inner-column>
-    </header>
-
-    <section class ='rps_choose'>
-        <inner-column>
-            <h2>Choose Rock, Paper, or Scissors!</h2>
-            <button>Rock</button>
-            <button>Paper</button>
-            <button>Scissors</button>
-        </inner-column>
-    </section>
-
-    <section class="rps_result">
-        <inner-column>
-            <h2>The computer has chosen 'x', you lose!</h2>
-        </inner-column>
-    </section>
-    
+    <body>
+        <header>
+            <inner-column>
+                <hero>
+                    <h1>Play Rock Paper Scissors</h1>
+                    <button id="myButton" class="float-left submit-button" onclick="promptMe()">Play</button>
+                </hero>
+            </inner-column>
+        </header>
+    <main>
+        <section class="rps_result">
+            <inner-column>
+                <h2>The computer has chosen 'x', you lose!</h2>
+            </inner-column>
+        </section>
+    </main>
 </body>
 </html>
