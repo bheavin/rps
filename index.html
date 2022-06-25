@@ -7,24 +7,15 @@
     <title>Play Rock Paper Scissors</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
+    <!-- CSS dependencies -->
+    <link rel="stylesheet" type="text/css" href="file:///home/christopher/repos/rps/bootstrap.min.css">
 </head>
     <body>
-
-        <!-- JS dependencies -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Bootstrap 4 dependency -->
-        <script src="popper.min.js"></script>
-        <script src="bootstrap.min.js"></script>
-
-        <!-- bootbox code -->
-        <script src="bootbox.min.js"></script>
-        <script src="bootbox.locales.min.js"></script>
-
         <header>
             <inner-column>
                 <hero>
                     <h1>Play Rock Paper Scissors</h1>
-                    <button id="myButton" class="float-left submit-button" onclick="promptMe()">Play</button>
+                    <button class=".show-alert" onclick="promptMe()">Play</button>
                 </hero>
             </inner-column>
         </header>
@@ -35,5 +26,22 @@
             </inner-column>
         </section>
     </main>
-</body>
+
+        <!-- JS dependencies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap 4 dependency -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/cjs/popper.min.js"></script>
+        <script src="file:///home/christopher/repos/rps/bootstrap.min.js"></script>
+
+        <!-- bootbox code -->
+        <script src="bootbox.min.js"></script>
+        <script src="bootbox.locales.min.js"></script>
+        <script>
+            $(document).on("click", ".show-alert", function(e) {
+                bootbox.alert("Hello world!", function() {
+                    console.log("Alert Callback");
+                });
+            });
+        </script>
+    </body>
 </html>
